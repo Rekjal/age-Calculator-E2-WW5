@@ -16,6 +16,8 @@ export default class Calculator {
     return;
   }
 
- 
+  yearsRemaining(){
+
+  }
 
 }
