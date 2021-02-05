@@ -1,4 +1,10 @@
 export default class Calculator {
-  constuctor () {
+  constructor (ageOnMercury, ageOnVenus, ageOnEarth, ageOnMars, ageOnJupiter) {
+    this.ageOnMercury = ageOnMercury;
+    this.ageOnVenus = ageOnVenus;
+    this.ageOnEarth = ageOnEarth;
+    this.ageOnMars = ageOnMars;
+    this.ageOnJupiter = ageOnJupiter;
   }
+
 }
