@@ -17,5 +17,9 @@ export default class Calculator {
     planetAgeArray.push(ageOnMercury, ageOnVenus, ageOnEarth, ageOnMars, ageOnJupiter);
     return planetAgeArray;
   }
-  
+
+  yearsRemaining(){
+
+  }
+
 }

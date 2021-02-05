@@ -15,4 +15,8 @@ describe('Calculator', () => {
     expect(reusableCalculator.ageOnPlanets(20,[1,2,3,4,5])).toEqual([20,10,6,5,4]);
   });
 
+  test('should correctly call method "ageOnPlanets" inside class', () => {
+    expect(reusableCalculator.yearsRemaining()).toEqual(null);
+  });
+
 });
