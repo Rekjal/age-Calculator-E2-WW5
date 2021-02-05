@@ -11,5 +11,8 @@ describe('Calculator', () => {
     expect(reusableCalculator.ageOnMercury).toEqual(1);
   });
 
+  test('should correctly call method "ageOnPlanets" inside class', () => {
+    expect(reusableCalculator.ageOnPlanets()).toEqual(1);
+  });
 
 });

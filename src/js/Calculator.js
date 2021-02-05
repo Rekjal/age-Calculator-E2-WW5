@@ -7,4 +7,8 @@ export default class Calculator {
     this.ageOnJupiter = ageOnJupiter;
   }
 
+  ageOnPlanets() {   
+    return null;
+  }
+
 }
