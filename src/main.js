@@ -20,8 +20,9 @@ $(document).ready(function() {
     event.preventDefault();
     const length1 = parseInt($('#rect-length1').val());
     const length2 = parseInt($('#rect-length2').val());
-    const rectangle = new Rectangle(length1, length2);
-    const response = rectangle.getArea();
+    const rectangle = new Rectangle();
+    console.log(rectangle);
+    const response = length1 + ":" + length2;
     $('#response2').append(`<p> The area of the rectangle is ${response}.</p>`);
   });
 
