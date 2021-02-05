@@ -8,18 +8,14 @@ export default class Calculator {
   }
 
   ageOnPlanets(userInputAge, planetsConvFactor) {
-    let ageOnMercury = (Math.floor(userInputAge / planetsConvFactor[0]));
-    let ageOnVenus = (Math.floor(userInputAge / planetsConvFactor[1]));
-    let ageOnEarth = (Math.floor(userInputAge / planetsConvFactor[2]));
-    let ageOnMars = (Math.floor(userInputAge / planetsConvFactor[3]));
-    let ageOnJupiter = (Math.floor(userInputAge / planetsConvFactor[4]));
-    let planetAgeArray = [];
-    planetAgeArray.push(ageOnMercury, ageOnVenus, ageOnEarth, ageOnMars, ageOnJupiter);
-    return planetAgeArray;
+    this.ageOnMercury = (Math.floor(userInputAge / planetsConvFactor[0]));
+    this.ageOnVenus = (Math.floor(userInputAge / planetsConvFactor[1]));
+    this.ageOnEarth = (Math.floor(userInputAge / planetsConvFactor[2]));
+    this.ageOnMars = (Math.floor(userInputAge / planetsConvFactor[3]));
+    this.ageOnJupiter = (Math.floor(userInputAge / planetsConvFactor[4]));
+    return;
   }
 
-  yearsRemaining(){
-
-  }
+ 
 
 }
