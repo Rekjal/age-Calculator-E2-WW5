@@ -7,8 +7,15 @@ export default class Calculator {
     this.ageOnJupiter = ageOnJupiter;
   }
 
-  ageOnPlanets() {   
-    return null;
+  ageOnPlanets(userInputAge, planetsConvFactor) {
+    let ageOnMercury = (Math.floor(userInputAge / planetsConvFactor[0]));
+    let ageOnVenus = (Math.floor(userInputAge / planetsConvFactor[1]));
+    let ageOnEarth = (Math.floor(userInputAge / planetsConvFactor[2]));
+    let ageOnMars = (Math.floor(userInputAge / planetsConvFactor[3]));
+    let ageOnJupiter = (Math.floor(userInputAge / planetsConvFactor[4]));
+    let planetAgeArray = [];
+    planetAgeArray.push(ageOnMercury, ageOnVenus, ageOnEarth, ageOnMars, ageOnJupiter);
+    return planetAgeArray;
   }
-
+  
 }
