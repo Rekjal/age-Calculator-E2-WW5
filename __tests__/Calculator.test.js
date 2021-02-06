@@ -14,5 +14,10 @@ describe('Calculator', () => {
     expect(reusableCalculator).toEqual({userInputAge: 45, race: "caucasian", gender: "female", planets: ["mercury", "venus", "earth", "mars", "jupiter"], agePerPlanet: {}, planetId: -1});
   });
 
+  test('should correctly call method "assignPlanetId"', () => {
+    reusableCalculator.assignPlanetId();
+    expect(reusableCalculator.planetId).toEqual(0);
+    reusableCalculator.planetId = -1; //set value back to default so as to not impact future tests
+  });
   
 });

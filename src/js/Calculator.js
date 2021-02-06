@@ -7,4 +7,9 @@ export default class Calculator {
     this.agePerPlanet = {};
     this.planetId = -1;
   }
+
+  assignPlanetId() {
+    this.planetId += 1;
+    return this.planets[this.planetId];
+  }
 }
