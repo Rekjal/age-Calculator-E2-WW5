@@ -78,6 +78,15 @@ h3 {
   font-weight: 700;
 }
 
+.fontResult {
+  font-size: 15px;
+}
+
+#h3ID {
+  display: none;
+
+}
+
 #output {
   font-family: 'Indie Flower', cursive;
   display: none;
