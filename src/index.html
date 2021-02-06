@@ -1,11 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Super Galactic Age Calculator</title>
+  <title>Age Calculator</title>
 </head>
+
 <body>
- 
+  <div class="container">
+    <h1><span class="coralColor">Super Galactic Age Calculator</span> Page </h1>
+    <div class="jumbotron">
+      <h2>Enter your Age, Gender, and Race!</h2>
+      <br>
+      <form id="formOne" name="ageCalculator">
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input id="age" class="form-control" required input type="number" name="age" min="1" max="150" step="1"
+            placeholder="Enter Age" />
+        </div>
+        <br>
+        <label>Select Gender</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="sex" value="male" checked>
+            Male
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="sex" value="female">
+            Female
+          </label>
+        </div>
+        <br>
+        <label>Select your Race</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="race" value="caucasian" checked>
+            Caucasian
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="race" value="asian">
+            Asian
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="race" value="africanAmerican">
+            African American
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="race" value="latino">
+            Latino
+          </label>
+        </div>
+        </br>
+        <button type="submit" id="submit" class="btn btn-success">Submit</button>
+        <div id="output">
+          <br>
+          <p class="mb-0">
+          <h3>For your chosen <span class="goldColor">Earth Age</span><span class="blackColor"> : </span><span
+              class="goldColor">Gender</span><span class="blackColor"> : </span><span
+              class="goldColor">Race</span><span class="blackColor"> : : : </span><span id="ageSecRace"></span>
+          </h3>
+          </p>
+          <blockquote class="blockquote">
+            <ul id="agePerPlanet"></ul>
+          </blockquote>
+
+        </div>
+
+
+    </div>
+    <div class="aTag">
+      <a href="./index.html" id="aTag">Refresh Page</a>
+    </div>
+    </form>
+  </div>
+
+
+
+
 </body>
+
 </html>

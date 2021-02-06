@@ -1,3 +1,115 @@
 body {
   background-color: lightblue;
 }
+
+.aTag {
+  margin:auto;
+  width: 100%;
+  text-align: right;
+}
+
+
+.aTag:hover {
+  margin:auto;
+  width: 100%;
+  text-align: right;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+body {
+  background-color: whitesmoke;
+ /*  font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
+  font-family: 'Indie Flower', cursive;
+  font-size:medium;
+  padding: 70px;
+  /* background: url(http://nahj2018.org/wp-content/uploads/2020/01/coloring-book-pages-solar-system-birds-for-adults-designs-cute-halloween-awesome-pig-toddlers-creative-dinosaur-haven-crayola-inappropriate-drawings-spiderman-paper-enchanted-forest.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top:0px;
+}
+
+h1, p, ul, li {
+  font-family: 'Indie Flower', cursive;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: 'Indie Flower', cursive;
+  font-weight: 700;
+  padding-left: 0.15%;
+}
+
+h3 {
+  font-family: 'Indie Flower', cursive;
+  font-weight: 700;
+  padding-left: 2.2%;
+}
+.coralColor {
+  color: coral;
+  font-family: 'Indie Flower', cursive;
+  font-weight: 700;
+  margin: auto;
+  padding:auto;
+  text-align: center;
+}
+
+.blueColor {
+  font-family: 'Indie Flower', cursive;
+  color: blue;
+  font-weight: 700;
+}
+
+.blackColor {
+  font-family: 'Indie Flower', cursive;
+  color: black;
+  font-weight: 700;
+}
+
+.greyColor {
+  font-family: 'Indie Flower', cursive;
+  color: grey;
+  font-weight: 700;
+}
+
+.goldColor {
+  font-family: 'Indie Flower', cursive;
+  color: coral;
+  font-weight: 700;
+}
+
+#output {
+  font-family: 'Indie Flower', cursive;
+  display: none;
+  margin-left:1.6%;
+  padding-top:0%;
+  margin-top:0%;
+  border-left: 2px solid coral;
+}
+
+#agePerPlanet {
+  font-family: 'Indie Flower', cursive;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size:medium;  
+}
+
+
+.container{
+  margin-top:0%;
+  font-weight: 700;    
+  padding-top:0%;
+
+}
+
+.demographic{
+  width: 50%;
+
+}
+
+.sex{
+  width: 50%;
+
+}
+
+
+
