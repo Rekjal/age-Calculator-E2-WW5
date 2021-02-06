@@ -18,5 +18,17 @@ export default class Calculator {
     this.agePerPlanet[planetID] = planet;
   }
 
-  
+  addAgeOnPlanets(agePlanetBasedAdjust, raceBasedLifeExpOnEarth) { //both arguments are objects
+    let genderBasedLifeExpCorrection = 0;
+    if (this.gender === "female") {
+      genderBasedLifeExpCorrection += 7;
+    }
+    this.planets.forEach(planet => {
+      const agePlanetBased = (Math.floor(this.userInputAge / agePlanetBasedAdjust[planet]));
+      const estLifeExp = (Math.floor(raceBasedLifeExpOnEarth[this.race] / agePlanetBasedAdjust[planet])) + genderBasedLifeExpCorrection;
+      let planetObject = { agePlanetBased: agePlanetBased, estLifeExp: estLifeExp };
+      this.addPlanet(planetObject);
+    });
+    return;  //returns "undefined"
+  }
 }
