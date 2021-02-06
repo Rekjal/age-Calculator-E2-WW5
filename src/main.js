@@ -39,7 +39,7 @@ $(document).ready(function () {
         yearsLeftText = `Should have kicked the bucket ${-yearsLeft} years ago`;
       }
       else if(yearsLeft === 0) {
-        yearsLeftText = `Years left to live is ${yearsLeft}`;
+        yearsLeftText = `Death is knocking on your door (years left to live is ${yearsLeft})`;
       }
       else {
         yearsLeftText = `Years left to live is ${yearsLeft}`;
