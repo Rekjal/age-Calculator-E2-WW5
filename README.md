@@ -22,15 +22,9 @@
 
 
 - How many `years a user has left to live` on each planet (including `Earth`). This is calculated based on user’s estimated `Life Expectancy` which in turn is calculated based on two pieces of information collected from user (`Gender`, and `Race`). This spawns 3 cases ..
-
-
-- If user has already surpassed the estimated `Life Expectancy`, return the number of `years user has lived past` the estimated `Life Expectancy`.
-
-
-- If user hasn't surpassed the estimated `Life Expectancy`, return the number of years `left to live`
-
-
-- If user's `current age` is `exactly equal` to estimated` Life Expectancy`, gently inform on `impending death`
+	- If user has already surpassed the estimated `Life Expectancy`, return the number of `years user has lived past` the estimated `Life Expectancy`.
+	- If user hasn't surpassed the estimated `Life Expectancy`, return the number of years `left to live`
+	- If user's `current age` is `exactly equal` to estimated` Life Expectancy`, gently inform on `impending death`
 
 
 ## Description
