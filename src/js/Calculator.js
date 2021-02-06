@@ -5,6 +5,13 @@ export default class Calculator {
     this.ageOnEarth = ageOnEarth;
     this.ageOnMars = ageOnMars;
     this.ageOnJupiter = ageOnJupiter;
+    this.demoELECorrection = {
+      caucasian: 1.10,
+      asian: 1.15,
+      africanAmerican: 0.90,
+      latino: 0.95
+    };
+    this.estimatedLifeExp = 65;
   }
 
   ageOnPlanets(userInputAge, planetsConvFactor) {

@@ -15,8 +15,13 @@ describe('Calculator', () => {
     expect(reusableCalculator.ageOnPlanets(20,[1,2,3,4,5])).toEqual(undefined);
   });
 
-  test('should correctly call method "ageOnPlanets" inside class', () => {
-    expect(reusableCalculator.yearsRemaining()).toEqual(null);
+  test('should correctly call property "demoELECorrection" inside class', () => {
+    expect(reusableCalculator.demoELECorrection).toEqual({caucasian: 1.10, asian: 1.15, africanAmerican: 0.90, latino: 0.95});
+  });
+
+
+  test('should correctly call method "yearsRemaining" inside class', () => {
+    expect(reusableCalculator.yearsRemaining()).toEqual(undefined);
   });
 
 });
