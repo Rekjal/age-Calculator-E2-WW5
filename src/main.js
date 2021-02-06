@@ -12,7 +12,7 @@ $(document).ready(() => {
   });
   $('#formOne').submit((event) => {
     var buttonObj = document.querySelector("button");
-    buttonObj.textContent = "submitted";
+    buttonObj.textContent = "Submitted";
     buttonObj.disabled = true;
     event.preventDefault();
 
