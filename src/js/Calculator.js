@@ -12,4 +12,11 @@ export default class Calculator {
     this.planetId += 1;
     return this.planets[this.planetId];
   }
+
+  addPlanet(planet) { //copied same pattern as address book
+    let planetID = this.assignPlanetId();
+    this.agePerPlanet[planetID] = planet;
+  }
+
+  
 }
