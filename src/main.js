@@ -4,16 +4,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import Calculator from './js/Calculator';
 
+$(document).ready(() => {
+  var buttonObj = document.querySelector("button");
+  $('#restart').click(() => {
+    document.location.reload(true);       //Reload Page
+    buttonObj.textContent = "submit";
+  });
+  $('#formOne').submit((event) => {
+    var buttonObj = document.querySelector("button");
+    buttonObj.textContent = "submitted";
+    buttonObj.disabled = true;
+    event.preventDefault();
 
-$(document).ready(function () {
-  $('#formOne').submit(function (event) {
     event.preventDefault();
     $("#output").hide();
     $("ul#planetAge").empty();
     $("#ageSecRace").empty();
-    // $("#h3ID").empty();
-    var buttonObj = document.querySelector("button");
-    buttonObj.textContent = "submitted";
 
     const userEnteredAge = parseInt($("#age").val());
     const userEnteredSex = $("input:radio[name=sex]:checked").val();
@@ -24,7 +30,7 @@ $(document).ready(function () {
     const planets = ["mercury", "venus", "earth", "mars", "jupiter"];
     const calculator = new Calculator(userEnteredAge, userEnteredRace, userEnteredSex, planets);
     calculator.addAgeOnPlanets(agePlanetBasedAdjust, raceBasedLifeExpOnEarth);
-   
+
     $("#output").show();
     $("#h3ID").show();
     const raceNameCapitalized = userEnteredRace.charAt(0).toUpperCase() + userEnteredRace.slice(1);
@@ -38,7 +44,7 @@ $(document).ready(function () {
       if (yearsLeft < 0) {
         yearsLeftText = `Should have kicked the bucket ${-yearsLeft} years ago`;
       }
-      else if(yearsLeft === 0) {
+      else if (yearsLeft === 0) {
         yearsLeftText = `Death is knocking on your door (years left to live is ${yearsLeft})`;
       }
       else {
@@ -50,5 +56,4 @@ $(document).ready(function () {
       $("ul#planetAge").append(finalText);
     });
   });
-
 });

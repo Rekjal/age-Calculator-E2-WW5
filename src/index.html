@@ -16,8 +16,7 @@
       <form id="formOne" name="ageCalculator">
         <div class="form-group">
           <label for="age">Age</label>
-          <input id="age" class="form-control" required input type="number" name="age" min="1" max="150" step="1"
-            placeholder="Enter Age" />
+          <input id="age" class="form-control" required type="number" name="age" min="1" max="150" step="1" placeholder="Enter Age" />
         </div>
         <br>
         <label>Select Gender</label>
@@ -59,34 +58,20 @@
             Latino
           </label>
         </div>
-        </br>
-        <button type="submit" id="submit" class="btn btn-success">Submit</button>
         <br>
-          <br>
-        <div id="output">          
-          <p class="mb-0">
-          <h3 id><span id ="h3ID">For your chosen <span class="goldColor">Age</span><span class="blackColor"> : </span><span
-              class="goldColor">Gender</span><span class="blackColor"> : </span><span
-              class="goldColor">Race</span><span class="blackColor"> : : : </span><span id="ageSecRace"></span></span>
-          </h3>
-          </p>
+        <button type="submit" id="submit" class="btn btn-success">Submit</button>
+        <button type="submit" id="restart" class="btn btn-danger">Refresh</button>
+        <br>
+        <br>
+        <div id="output">
+          <h3><span id="h3ID">For your chosen <span class="goldColor">Age</span><span class="blackColor"> :</span><span class="goldColor">Gender</span><span class="blackColor"> : </span><span class="goldColor">Race</span><span class="blackColor"> : : : </span><span id="ageSecRace"></span></span></h3>
           <blockquote class="blockquote fontResult">
             <ul id="planetAge"></ul>
           </blockquote>
-
         </div>
-
-
+      </form>
     </div>
-    <div class="aTag">
-      <a href="./index.html" id="aTag">Refresh Page</a>
-    </div>
-    </form>
   </div>
-
-
-
-
 </body>
 
 </html>
