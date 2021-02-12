@@ -30,7 +30,7 @@
 
 - If user's `current age` is `exactly equal` to estimated` Life Expectancy`, gently inform on `impending death`
 
-- (![An image of UI for 3 differnt age Selections](.\src\assets\images\PrintScreenShots.png))
+- (![An image of UI for 3 different age Selections](./src/assets/images/PrintScreenShots.png))
 
 ## Description
 
