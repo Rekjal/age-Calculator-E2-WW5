@@ -10,11 +10,11 @@ describe('Calculator', () => {
     reusableCalcMale = new Calculator(60, "caucasian", "male", planets);
   });
 
-  test('should correctly call construtor with arguments', () => {
+  test('should correctly call construtor (for gender value of "female") with arguments', () => {
     expect(reusableCalcFemale).toEqual({ userInputAge: 45, race: "caucasian", gender: "female", planets: ["mercury", "venus", "earth", "mars", "jupiter"], agePerPlanet: {}, planetId: -1 });
   });
 
-  test('should correctly call construtor with arguments', () => {
+  test('should correctly call construtor (for gender value of "male") with arguments', () => {
     expect(reusableCalcMale).toEqual({ userInputAge: 60, race: "caucasian", gender: "male", planets: ["mercury", "venus", "earth", "mars", "jupiter"], agePerPlanet: {}, planetId: -1 });
   });
 
@@ -31,7 +31,7 @@ describe('Calculator', () => {
     expect(reusableCalcFemale.agePerPlanet).toMatchObject(planetObjectExp);
   });
 
-  test('should correctly call method "addAgeOnPlanets()"', () => {
+  test('should correctly call method "addAgeOnPlanets() (for gender value of "female")"', () => {
     const agePlanetBasedAdjust = { mercury: 0.24, venus: 0.62, earth: 1.00, mars: 1.88, jupiter: 11.86 };
     const raceBasedLifeExpOnEarth = { caucasian: 65, asian: 70, africanAmerican: 65, latino: 4 };
     const result = { mercury: { agePlanetBased: 187, estLifeExp: 277 }, venus: { agePlanetBased: 72, estLifeExp: 111 }, earth: { agePlanetBased: 45, estLifeExp: 72 }, mars: { agePlanetBased: 23, estLifeExp: 41 }, jupiter: { agePlanetBased: 3, estLifeExp: 12 } };
@@ -39,7 +39,7 @@ describe('Calculator', () => {
     expect(reusableCalcFemale.agePerPlanet).toMatchObject(result);
   });
 
-  test('should correctly call method "addAgeOnPlanets()"', () => {
+  test('should correctly call method "addAgeOnPlanets() (for gender value of "male")"', () => {
     const agePlanetBasedAdjust = { mercury: 0.24, venus: 0.62, earth: 1.00, mars: 1.88, jupiter: 11.86 };
     const raceBasedLifeExpOnEarth = { caucasian: 65, asian: 70, africanAmerican: 65, latino: 4 };
     const result = { mercury: { agePlanetBased: 250, estLifeExp: 270 }, venus: { agePlanetBased: 96, estLifeExp: 104 }, earth: { agePlanetBased: 60, estLifeExp: 65 }, mars: { agePlanetBased: 31, estLifeExp: 34 }, jupiter: { agePlanetBased: 5, estLifeExp: 5 } };
